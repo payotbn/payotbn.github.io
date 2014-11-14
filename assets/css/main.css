@@ -1,0 +1,350 @@
+body {
+        font-family: Roboto, sans-serif;
+}
+ 
+img, svg {
+    width: 100%;
+    max-height: 100%;
+}
+ 
+#nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: rgba(68, 68, 68, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+ 
+#nav-links {
+    display: block;
+    width: 100%;
+ 
+}
+ 
+#nav-links.hidden {
+    display: none;
+}
+ 
+.nav-link {
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+}
+ 
+ 
+.nav-link:hover {
+    background: #39b118;
+    color: #fff;
+}
+ 
+#hamburger {
+    fill: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+ 
+@media all and (min-width: 640px) {
+    #nav {
+ 
+    }
+    #nav-links.hidden {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .nav-link {
+        color: #bbb;
+    }
+    .nav-link:hover {
+        color: #fff;
+        background: transparent;
+    }
+    #hamburger {
+    display: none;
+    }
+}
+
+@media all and (max-width: 640px) {
+ .walk-pic{
+  display: none;
+ }
+}
+ 
+ 
+ 
+#hero {
+    height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.logo {
+    display: block;
+    max-width: 300px;
+    width: 90%;
+    margin-bottom: 4rem;
+   
+}
+ 
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.intro h3 {
+    font-size: 1.2rem;
+}
+.intro-img {
+    display: block;
+    border-radius: 50%;
+    padding: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+}
+ 
+ 
+#walks {
+   
+}
+ 
+#walks-header {
+    height: 100vh;
+    background-image: url(../img/walks.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#guides-header {
+    height: 100vh;
+    background-image: url(../img/charles.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#map {
+    height: 665px;
+    background: #4d95f8;
+ 
+}
+ 
+#social {
+    background: #333;
+ 
+}
+ 
+.section-h {
+    color: #fff;
+    font-weight: 900;
+    font-size: 4rem;
+    text-shadow: 0 0 10px #000;
+}
+ 
+.button {
+    background: #39b118;
+    color: #fff;
+    display: block;
+    max-width: 300px;
+    width: 90%;
+    margin: 1rem auto;
+    padding: .5rem;
+    border-radius: 4px;
+    font-weight: 900;
+    transition: background .4s ease;
+}
+ 
+.button:hover {
+    background: #42d01c;
+    color: #fff;
+}
+ 
+.walk {
+    display: flex;
+    height: 600px;
+    margin: 2rem 0;
+}
+ 
+.walk-pic, .walk-desc {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 50%;
+}
+ 
+.walk-desc {
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+ 
+#walk-architecture .walk-pic {
+    background-image: url(../img/walks-architecture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#walk-garden .walk-pic {
+    background-image: url(../img/garden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#walk-ghosts .walk-pic {
+    background-image: url(../img/ghost.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#walk-music .walk-pic {
+    background-image: url(../img/mozart.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.walk-info-btn {
+	display: block;
+	background: #333;
+	color: #39b118;
+	text-align: center;
+	text-transform: uppercase;
+	padding: .8rem;
+	font-weight: 900;
+	transition: background .4s ease;
+	
+}
+
+.walk-info-btn:hover {
+	color: #39b118;
+	background: #000;
+}
+
+.walk-info-panel{
+	display: flex;
+	margin-bottom: 6px;
+	margin-right: -6px;
+}
+
+.walk-info-panel li{
+	background: #555;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	flex-grow: 1;
+	margin-right: 6px;
+	font-weight: 900;
+	padding: .8rem;
+}
+
+.rev{
+    flex-direction: row-reverse;
+}
+
+.wdith-guide-pic{
+    flex: 1;   
+}
+
+.width-guide-text{
+    flex: 2;   
+}
+
+.social-icon {
+    fill: currentColor;
+}
+
+.social-icon a {
+    display: block;
+    width: 6rem;
+    padding: 10px;
+}
+
+.icon-twitter use {
+    color: #55acee;
+}
+
+.icon-twitter:hover use {
+    color: #0ddaff;
+}
+
+.icon-facebook use {
+    color: #3b5998;
+}
+
+.icon-facebook:hover use {
+    color: #0ddaff;
+}
+
+.icon-googleplus use {
+    color: #d34836;
+}
+
+.icon-googleplus:hover use {
+    color: #f00;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: block;
+    width: 2re,;
+    padding: 10px;
+}
+
+svg {
+    width: 100%;
+    max-height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+
+.map {
+    height: 100vh;
+}

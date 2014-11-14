@@ -1,0 +1,205 @@
+/* RESET */
+* {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* GRID */
+.grid {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1220px;
+}
+.grid > .row {
+  margin: 0 -0.6rem;
+}
+.grid > .row:first-child {
+  margin-top: 0.6rem;
+}
+.grid > .row:last-child {
+  margin-bottom: 0.6rem;
+}
+.col {
+  padding: 0.6rem;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.col.fill {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+@media all and (min-width: 600px) {
+  .row.medium {
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+@media all and (min-width: 960px) {
+  .row.large {
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+.test {
+  height: 160px;
+  padding: 0.5rem;
+  font-weight: 800;
+  color: #fff;
+}
+.grid > .row:nth-child(3n+1) .test {
+  background: #03a8ff;
+}
+.grid > .row:nth-child(3n+2) .test {
+  background: #FF6A00;
+}
+.grid > .row:nth-child(3n+3) .test {
+  background: #48de1e;
+}
+/* TYPOGRAPHY */
+html {
+  font-size: 100%;
+}
+@media all and (min-width: 600px) {
+  html {
+    font-size: 110%;
+  }
+}
+@media all and (min-width: 960px) {
+  html {
+    font-size: 120%;
+  }
+}
+body {
+  background-color: #ffffff;
+  color: #333333;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+blockquote {
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+blockquote:last-child {
+  margin-bottom: 0;
+}
+p,
+ul,
+ol {
+  font-size: 1rem;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+}
+b,
+strong {
+  font-weight: 700;
+}
+i,
+em {
+  font-style: italic;
+}
+.light {
+  font-weight: 300;
+}
+.bold {
+  font-weight: 700;
+}
+ul.list {
+  list-style-type: disc;
+  margin-left: 1.2rem;
+}
+ol.list {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+}
+.center {
+  text-align: center;
+}
+pre, code {
+  font-family: monospace;
+  font-size: 120%;
+}
+a {
+  color: #39b118;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+a:hover {
+  color: #48de1e;
+}
