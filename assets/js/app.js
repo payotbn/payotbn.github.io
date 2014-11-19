@@ -7,10 +7,10 @@
         var locations = {
         
             prague: new g.maps.LatLng(50.085401, 14.416020),
-            walk1: new g.maps.LatLng(50.084194, 14.423488),
-            walk2: new g.maps.LatLng(50.079064, 14.416728),
-            walk3: new g.maps.LatLng(50.084052, 14.407507),
-            walk4: new g.maps.LatLng(50.089790, 14.417056)
+            walk1: new g.maps.LatLng(50.083450, 14.424405),
+            walk2: new g.maps.LatLng(50.088861, 14.410500),
+            walk3: new g.maps.LatLng(50.086579, 14.408633),
+            walk4: new g.maps.LatLng(50.081533, 14.413832)
             
         
         };
@@ -54,22 +54,22 @@
         
         //info windows
         var infowindow1 = new google.maps.InfoWindow({
-            content:"This is the Walk1 description"
+            content:"Pin 1"
             });
 
         
         var infowindow2 = new google.maps.InfoWindow({
-            content:"This is the Walk2 description"
+            content:"Pin 2"
             });
 
         
         var infowindow3 = new google.maps.InfoWindow({
-            content:"This is the Walk3 description"
+            content:"Pin 3"
             });
 
         
         var infowindow4 = new google.maps.InfoWindow({
-            content:"This is the Walk4 description"
+            content:"Pin 4"
             });
 
         
