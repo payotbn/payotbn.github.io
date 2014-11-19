@@ -1,12 +1,16 @@
 body {
-        font-family: Roboto, sans-serif;
+	font-family: Roboto, sans-serif;
 }
- 
-img, svg {
+
+svg {
     width: 100%;
     max-height: 100%;
 }
- 
+
+img {
+    width: 100%;
+}
+
 #nav {
     position: fixed;
     top: 0;
@@ -19,30 +23,30 @@ img, svg {
     justify-content: flex-end;
     flex-wrap: wrap;
 }
- 
+
 #nav-links {
     display: block;
     width: 100%;
- 
+
 }
- 
+
 #nav-links.hidden {
     display: none;
 }
- 
+
 .nav-link {
     color: #fff;
     display: block;
     text-align: center;
     padding: 0.8rem;
 }
- 
- 
+
+
 .nav-link:hover {
     background: #39b118;
     color: #fff;
 }
- 
+
 #hamburger {
     fill: #fff;
     display: block;
@@ -51,10 +55,10 @@ img, svg {
     padding: 10px;
     cursor: pointer;
 }
- 
+
 @media all and (min-width: 640px) {
     #nav {
- 
+
     }
     #nav-links.hidden {
         display: -webkit-flex;
@@ -76,14 +80,8 @@ img, svg {
     }
 }
 
-@media all and (max-width: 640px) {
- .walk-pic{
-  display: none;
- }
-}
- 
- 
- 
+
+
 #hero {
     height: 100vh;
     background-image: url(../img/Hero.jpg);
@@ -96,22 +94,48 @@ img, svg {
     align-items: center;
     justify-content: center;
 }
- 
+
 .logo {
     display: block;
     max-width: 300px;
     width: 90%;
     margin-bottom: 4rem;
-   
+    
 }
- 
+
 .intro {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
- 
+
+.people {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.peoplerev {
+    
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+    
+}
+.rev {
+
+    flex-direction: row-reverse;
+
+}
+
+
+
+
 .intro h3 {
     font-size: 1.2rem;
 }
@@ -122,12 +146,12 @@ img, svg {
     max-width: 300px;
     margin: 0 auto;
 }
- 
- 
+
+
 #walks {
-   
+    
 }
- 
+
 #walks-header {
     height: 100vh;
     background-image: url(../img/walks.jpg);
@@ -140,10 +164,14 @@ img, svg {
     align-items: center;
     justify-content: center;
 }
- 
+
+#guides{
+    
+}
+
 #guides-header {
     height: 100vh;
-    background-image: url(../img/charles.JPG);
+    background-image: url(../img/guides.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,25 +181,77 @@ img, svg {
     align-items: center;
     justify-content: center;
 }
- 
+
 #map {
-    height: 665px;
-    background: #4d95f8;
- 
+
 }
- 
+
 #social {
+
     background: #333;
- 
+
 }
- 
+.social-icons {
+
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+}
+.social-icons a {
+
+    display: block;
+    width: 7rem;
+    padding: 0.5rem;
+
+}
+.social-icon {
+
+    fill: currentColor;
+
+}
+.icon-twitter:hover use {
+
+    color: #339ee2;
+
+}
+.icon-twitter use {
+
+    color: rgba(51, 158, 226, 0.5);
+
+}
+.icon-facebook:hover use {
+
+    color: #3347e2;
+
+}
+.icon-facebook use {
+
+    color: rgba(51, 71, 226, 0.5);
+
+}
+.icon-googleplus:hover use {
+
+    color: #ed3030;
+
+}
+.icon-googleplus use {
+
+    color: rgba(237, 48, 48, 0.5);
+
+}
+.map {
+
+    height: 100vh;
+
+}
 .section-h {
     color: #fff;
     font-weight: 900;
     font-size: 4rem;
     text-shadow: 0 0 10px #000;
 }
- 
+
 .button {
     background: #39b118;
     color: #fff;
@@ -184,24 +264,24 @@ img, svg {
     font-weight: 900;
     transition: background .4s ease;
 }
- 
+
 .button:hover {
     background: #42d01c;
     color: #fff;
 }
- 
+
 .walk {
     display: flex;
     height: 600px;
     margin: 2rem 0;
 }
- 
+
 .walk-pic, .walk-desc {
     flex-shrink: 0;
     flex-grow: 1;
     width: 50%;
 }
- 
+
 .walk-desc {
     background-image: url(../img/map.jpg);
     background-position: center;
@@ -209,11 +289,11 @@ img, svg {
     background-size: cover;
     color: #fff;
     padding: 1.6rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
- 
+
 #walk-architecture .walk-pic {
     background-image: url(../img/walks-architecture.jpg);
     background-position: center;
@@ -221,130 +301,109 @@ img, svg {
     background-size: cover;
 }
 
-#walk-garden .walk-pic {
-    background-image: url(../img/garden.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.walk-info-btn {
+    display: block;
+    background: #333;
+    color: #39b118;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    font-weight: 900;
+    transition: background .4s ease;
 }
 
-#walk-ghosts .walk-pic {
-    background-image: url(../img/ghost.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.walk-info-btn:hover {
+    color: #39b118;
+    background: #000;
 }
 
+.walk-info-panel {
+    display: flex;
+    margin-bottom: 6px;
+    margin-right: -6px;
+}
+.walk-info-panel li {
+    background: #555;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    flex-grow: 1;
+    margin-right: 4px;
+    font-weight: 900;
+    padding: .8rem;
+}
 
-#walk-music .walk-pic {
+#walk-music .walk-pic-music {
     background-image: url(../img/mozart.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.walk-info-btn {
-	display: block;
-	background: #333;
-	color: #39b118;
-	text-align: center;
-	text-transform: uppercase;
-	padding: .8rem;
-	font-weight: 900;
-	transition: background .4s ease;
-	
-}
-
-.walk-info-btn:hover {
-	color: #39b118;
-	background: #000;
-}
-
-.walk-info-panel{
-	display: flex;
-	margin-bottom: 6px;
-	margin-right: -6px;
-}
-
-.walk-info-panel li{
-	background: #555;
-	color: #fff;
-	text-transform: uppercase;
-	text-align: center;
-	flex-grow: 1;
-	margin-right: 6px;
-	font-weight: 900;
-	padding: .8rem;
-}
-
-.rev{
-    flex-direction: row-reverse;
-}
-
-.wdith-guide-pic{
-    flex: 1;   
-}
-
-.width-guide-text{
-    flex: 2;   
-}
-
-.social-icon {
-    fill: currentColor;
-}
-
-.social-icon a {
-    display: block;
-    width: 6rem;
-    padding: 10px;
-}
-
-.icon-twitter use {
-    color: #55acee;
-}
-
-.icon-twitter:hover use {
-    color: #0ddaff;
-}
-
-.icon-facebook use {
-    color: #3b5998;
-}
-
-.icon-facebook:hover use {
-    color: #0ddaff;
-}
-
-.icon-googleplus use {
-    color: #d34836;
-}
-
-.icon-googleplus:hover use {
-    color: #f00;
-}
-
-.social-icons {
+.walk-desc-music {
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1.6rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.social-icons a {
-    display: block;
-    width: 2re,;
-    padding: 10px;
+.walk-pic-music, .walk-desc-music {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 50%;
 }
 
-svg {
-    width: 100%;
-    max-height: 100%;
+#walk-garden .walk-pic-garden {
+    background-image: url(../img/garden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-img {
-    width: 100%;
+.walk-desc-garden {
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.walk-pic-garden, .walk-desc-garden {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 50%;
+}
 
-.map {
-    height: 100vh;
+#walk-ghost .walk-pic-ghost {
+    background-image: url(../img/ghost.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.walk-desc-ghost {
+    background-image: url(../img/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.walk-pic-ghost, .walk-desc-ghost {
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 50%;
 }
