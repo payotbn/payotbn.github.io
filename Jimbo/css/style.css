@@ -1,8 +1,7 @@
 /*
-* Author: MafiaShare.net
-* Template: Centum
-* URL: http://themeforest.net/user/Vasterad/
-* ots @ tp2p
+* Author: Arash Banihashemi
+* Teacher: David Petryca
+* URL: http://payotbn.github.io/Jimbo
 */
 
 /* =================================================================== */
@@ -60,39 +59,6 @@
 #contact-details a:hover {color: #888;}
 
 
-/* Search Form
-====================================*/
-.search-form .search-text-box {
-	position: absolute;
-	right:10px;
-	width: 54px;
-	background-color: #303030;
-	border: none;
-	color: transparent;
-	font-size: 12px;
-	padding: 18px 0;
-	cursor: pointer;
-	background: url("../images/search-ico.png") 5% 50% no-repeat;
-	-moz-transition: 0.4s width ease;
-	-webkit-transition-duration: 0.4s;
-	-webkit-transition-property: width;
-	-webkit-transition-timing-function: ease;
-	-o-transition-duration: 0.4s;
-	-o-transition-property: width;
-	-o-transition-timing-function: ease;
-	-webkit-box-shadow:  none;
-	box-shadow:  none;
-}
-
-.search-form .search-text-box:focus {
-	font-size: 12px;
-	background-color: #303030;
-	padding: 18px 18px 18px 58px;
-	width: 150px;
-	border: none;
-	color: #fff;
-	cursor: text;
-}
 
 
 /* Main Navigation
