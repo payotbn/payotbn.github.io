@@ -711,9 +711,4 @@ body {
 	max-width: 50px;
     width: 20%;
     margin-bottom: 1rem; 
-	color: red;
-}
-
-.logo use {
-	color: rgba(51, 158, 226, 0.5);
 }
