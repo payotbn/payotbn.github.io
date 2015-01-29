@@ -30,6 +30,7 @@
 	margin: 0 0 0 20px;
 	padding: 5px 0 5px 20px;
 	float: left;
+	margin-top: 2rem;
 }
 
 /* Contact Details
@@ -704,4 +705,15 @@ html[xmlns] .slides {display: block;}
 
 body {
 	font-family: 'Lato', sans-serif;
+}
+
+.logo {
+	max-width: 50px;
+    width: 20%;
+    margin-bottom: 1rem; 
+	color: red;
+}
+
+.logo use {
+	color: rgba(51, 158, 226, 0.5);
 }
