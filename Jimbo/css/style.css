@@ -664,6 +664,11 @@ html[xmlns] .slides {display: block;}
   *margin-left: 0;
 }
 
+.ico-white {
+	background-image: url("../images/icons/glyphicons-white.png");
+	opacity: 1;
+}
+
 .mini-ico-user {
   background-position: -168px 0;
 }
@@ -684,3 +689,6 @@ html[xmlns] .slides {display: block;}
 	background-position: -288px -384px;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
