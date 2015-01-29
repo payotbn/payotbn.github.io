@@ -3,8 +3,8 @@
 ====================================================================== */
 
 	body {
-		background: url(../images/bg/noise.png);
-		font: 12px Arial, sans-serif;
+		background: url(../images/bg/wood.png);
+		font-family: 'Lato', sans-serif;
 		color: #666;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;

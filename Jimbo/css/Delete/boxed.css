@@ -1,33 +1,32 @@
 /* =================================================================== */
-/* Wide Layout
+/* Boxed Layout
 ====================================================================== */
 
 	body {
-		background: #fff;
+		background: url(../images/bg/noise.png);
 		font: 12px Arial, sans-serif;
 		color: #666;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
 		overflow-x: hidden;
-		border-top: 4px solid #444;
 	 }
 	 
 	#wrapper {
 		background: #fff;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		width: 100%;
-		padding: 25px 0 35px 0;
-		margin: 0 auto;
+		-webkit-box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+		box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+		width: 960px;
+		padding: 40px 35px 35px 35px;
+		margin: 50px auto 0 auto;
 	}
 	
 	#footer {
 		background: #303030;
-		width: 100%;
-		padding: 15px 0 0 0;
-		margin: 0 auto;
+		width: 960px;
+		padding: 15px 35px 0px 35px;
+		margin: 0 auto 50px auto;
 	}
-	
+
 
 /* Smaller than standard 1029 (devices and browsers)
 ====================================================================== */
@@ -60,6 +59,7 @@
 	#footer {
 		padding: 10px 0 0 0;
 	}
+
 }
 
 /* All Mobile Sizes (devices and browser)
@@ -71,7 +71,6 @@
 		padding: 15px 0 30px 0;
 		-webkit-box-shadow: none;
 		box-shadow: none;
-		width: 100%;
 	}
 	
 	body {
@@ -83,4 +82,5 @@
 		padding: 15px 0 0 0;
 		width: 100% !important;
 	}
+
 }
